@@ -1,0 +1,90 @@
+<!doctype html>
+<title>Example</title>
+<style>
+    body{
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .col-1 {
+        background: #7beccc;
+        flex: 1;
+    }
+
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        font-size: large;
+        font-family: SANS-SERIF;
+        background: #61eafc;
+    }
+
+    .content>article {
+        flex: 3;
+        min-height: 60vh;
+    }
+
+    .content>aside {
+        background: #7beccc;
+        flex: 1;
+    }
+
+    header,
+    footer {
+        background: #9073e7;
+        height: 20vh;
+    }
+
+    header,
+    footer,
+    article,
+    nav,
+    aside {
+        padding: 1em;
+    }
+</style>
+
+<body>
+    <nav class="col-1">
+        <h3>Menu</h3>
+        <li>Home</li>
+        <li>Clients</li>
+        <li>Services</li>
+        <li>About Us</li>
+    </nav>
+    <div class="col-2">
+        <header><h1>CampSoft LLP</h1></header>
+        <main class="content">
+            <article>
+                <h2>Internet Of Things.</h2>
+                The Internet of things (IoT) describes the network of physical objects “things” that are embedded with
+                sensors, software, and other technologies for the purpose of connecting
+                and exchanging data with other devices and systems over the Internet. The definition of the Internet of
+                things has evolved due to the convergence of multiple technologies,
+                real-time analytics, machine learning, commodity sensors, and embedded systems.
+            </article>
+            <aside><h3>Applications:</h3>
+            <li>Wearables</li>
+            <li>Health</li>
+            <li>Agriculture</li>
+            <li>Home Automation</li>
+            <li>Hospitality</li>
+        </aside>
+        </main>
+        <footer>© 2020 CampSoft LLP.</footer>
+    </div>
+</body>
